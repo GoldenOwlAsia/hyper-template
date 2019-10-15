@@ -2,9 +2,9 @@
   .slimscroll-menu
     a.logo.text-center href="#{root_path}"
       span.logo-lg
-        = image_tag "logo.png", height: "16px"
+        = image_pack_tag "logo.png", height: "16px"
       span.logo-sm
-        = image_tag "logo_sm.png", height: "16px"
+        = image_pack_tag "logo_sm.png", height: "16px"
     ul.metismenu.side-nav
       li.side-nav-title.side-nav-item Navigation
       li.side-nav-item
@@ -241,7 +241,7 @@
     .help-box.text-white.text-center
       a.float-right.close-btn.text-white href=("javascript: void(0);")
         i.mdi.mdi-close
-      = image_tag('assets/images/help-icon.svg', alt: "Helper Icon Image", height: 90)
+      = image_pack_tag('help-icon.svg', alt: "Helper Icon Image", height: 90)
       h5.mt-3 Unlimited Access
       p.mb-3 Upgrade to plan to get access to unlimited reports
       a.btn.btn-outline-light.btn-sm href=("javascript: void(0);")  Upgrade

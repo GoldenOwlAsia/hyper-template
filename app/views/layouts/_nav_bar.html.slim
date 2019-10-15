@@ -30,7 +30,7 @@
           /! item
           a.dropdown-item.notify-item href="javascript:void(0);"
             .notify-icon
-              = image_tag "users/avatar-2.jpg", class: "img-fluid rounded-circle"
+              = image_pack_tag "users/avatar-2.jpg", class: "img-fluid rounded-circle"
             p.notify-details Cristina Pride
             p.text-muted.mb-0.user-msg
               small Hi, How are you? What about our next meeting
@@ -44,7 +44,7 @@
           /! item
           a.dropdown-item.notify-item href="javascript:void(0);"
             .notify-icon
-              = image_tag "users/avatar-4.jpg", class: "img-fluid rounded-circle"
+              = image_pack_tag "users/avatar-4.jpg", class: "img-fluid rounded-circle"
             p.notify-details Karen Robinson
             p.text-muted.mb-0.user-msg
               small Wow ! this admin looks good and awesome design
@@ -61,7 +61,7 @@
     li.dropdown.notification-list
       a.nav-link.dropdown-toggle.nav-user.arrow-none.mr-0 aria-expanded="false" aria-haspopup="false" data-toggle="dropdown" href="#" role="button"
         span.account-user-avatar
-          = image_tag "users/avatar-1.jpg", alt: "user-image", class: "rounded-circle"
+          = image_pack_tag "users/avatar-1.jpg", alt: "user-image", class: "rounded-circle"
         span
           span.account-user-name = current_user.email
           span.account-position = current_user.role
