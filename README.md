@@ -1,37 +1,33 @@
-# README
+# Project Information
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Ruby version 2.6.3
 
-Things you may want to cover:
+- Rails version 6.0.0
 
-* Ruby version
-  2.6.3
+- Database: PostgreSQL
 
-* System dependencies
+# Setup Project
 
-* Configuration
+- Run this command and change env variables for your local
 
-* Database creation
-  rails db:create
+  ```
+  cp .env.example .env
+  ```
 
-* Database initialization
-  rails db:migrate
-  rails db:seed
+- Run this command to create database, run migration and sample data
 
-* How to run the test suite
+  ```
+  rake db:create db:migrate db:seed
+  ```
 
-* Services (job queues, cache servers, search engines, etc.)
+- Run this command and change value of the master key for your local
 
-* Deployment instructions
+  ```
+  cp config/master.key.example config/master.key
+  ```
 
-* Enviroment configuration
-  create '.env' file in root folder with following text:
+- Edit `credentials.yml`
 
-  DB_USERNAME=postgres
-  DB_PASSWORD=your-password
-  DB_DEVELOPMENT=your-database-name-development
-  DB_TEST=your-database-name-test
-  DB_PRODUCTION=your-database-name-production
-  DB_HOST=your-host
-  DB_PORT=your-port
+  ```
+  EDITOR=vim rails credentials:edit
+  ```
